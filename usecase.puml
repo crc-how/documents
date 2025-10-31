@@ -1,0 +1,38 @@
+@startuml usecase
+title "CRC Tool Use Cases"
+left to right direction
+
+actor User
+
+rectangle "CRC Service" {
+    usecase "Look Up CRC Parameters" as UC_Lookup
+    usecase "Calculate CRC Result" as UC_Calc
+    usecase "Copy CRC Source Code" as UC_Code
+}
+
+User --> UC_Lookup
+User --> UC_Calc
+User --> UC_Code
+
+note right of UC_Lookup
+  Lists polynomial, initial value,
+  and other parameters for each CRC.
+end note
+
+note right of UC_Calc
+  Accepts multiple input formats such as
+  hexadecimal and decimal.
+end note
+
+note right of UC_Code
+  Offers direct computation and
+  precomputed table implementations
+  in popular languages.
+end note
+
+note bottom of "CRC Service"
+  Caps each IP at two requests per second
+  to avoid overload or DDoS.
+end note
+
+@enduml

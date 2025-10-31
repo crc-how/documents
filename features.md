@@ -2,26 +2,31 @@
 
 ## CRC Type Lookup
 
-- Supports all commonly used CRCs
-- View parameters such as polynomial, initial value, and more in a tabular format
+- Supports every commonly used CRC variant
+- Displays parameters such as polynomial, initial value, and more in an easy-to-read table
 
-## Check CRC Calculation Results
+## CRC Calculation Results
 
-- Supports all commonly used CRCs
-- Supports multiple input formats (such as hex and dec)
+- Handles all frequently used CRC variants
+- Accepts multiple input formats (hexadecimal, decimal, and more)
 
-## View CRC Calculation Source Code
+## CRC Source Code Examples
 
-- Supports all commonly used CRCs
-- Supports commonly used programming languages
+- Covers every frequently used CRC variant
+- Provides ready-to-use snippets in popular languages
     - C
     - C++
     - Python
     - Rust
     - JavaScript
     - Java
-- Provides the following two source code approaches
-    - Direct computation method
-    - Precomputed table method
-- Explains the differences between the two approaches
-- Copy button enables instant copying
+- Includes two implementation styles
+    - Direct calculation
+    - Precomputed lookup table
+- Highlights the differences between both approaches
+- Copy button enables one-click reuse
+
+## Per-IP Rate Limiting
+
+- Caps each IP address at two requests per second
+- Shields the service from overload and deliberate DDoS attacks
